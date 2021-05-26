@@ -8,15 +8,24 @@ public class Citizen {
         //WRITE YOUR CODE HERE
 
         Scanner scan = new Scanner(System.in);
-        String age = scan.nextLine();
+        int seniorCitizens, nonSeniorCitizens, age;
+        System.out.println("Enter current count for seniorCitizens and nonSeniorCitizens:");
 
+        seniorCitizens = scan.nextInt();
+        nonSeniorCitizens = scan.nextInt();
+            System.out.println("What is new citizen's age?");
 
-        if (age < 65) {
-            return;
-        }
-        System.out.println("Senior Citizen");
+            age = scan.nextInt();
 
-
+            if(age >= 65) {
+                System.out.println("Senior Citizen");
+                seniorCitizens++;
+        }else {
+                System.out.println("Non Senior Citizen");
+                nonSeniorCitizens++;
+            }
+        System.out.println("New seniorCitizens count " + seniorCitizens);
+        System.out.println("New nonSeniorCitizens count " + nonSeniorCitizens);
     }
 }
 
