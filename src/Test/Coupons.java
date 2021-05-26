@@ -17,10 +17,10 @@ public class Coupons {
 
             int candyCount = couponCNT/10;
             int remainingCoupons = couponCNT % 10;
-            int gumbollsCount = remainingCoupons / 3;
+            int gumballsCount = remainingCoupons / 3;
 
             System.out.println("Number of Candies: " + candyCount);
-            System.out.println("Number of Gumballs:" + gumbollsCount);
+            System.out.println("Number of Gumballs:" + gumballsCount);
         }
     }
 }

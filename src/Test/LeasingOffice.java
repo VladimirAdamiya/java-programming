@@ -12,9 +12,20 @@ public class LeasingOffice {
         int startingPrice = 0;
 
         //WRITE YOUR CODE HERE:
+
+        if (numberOfBedrooms == 1) {
+            System.out.println("One Bedrooms selected");
+            startingPrice = 1100;
+        } else if (numberOfBedrooms == 2) {
+            System.out.println("Two Bedrooms selected");
+            startingPrice = 1850;
+        } else if (numberOfBedrooms == 3) {
+            System.out.println("Three Bedrooms selected");
+            startingPrice = 2550;
+        } else {
+            System.out.println("No such Bedrooms available");
+        }
+        System.out.println("Starting Price: " + startingPrice);
     }
-
-
-
 }
 
