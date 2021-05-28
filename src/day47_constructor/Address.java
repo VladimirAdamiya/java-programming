@@ -1,6 +1,9 @@
 package day47_constructor;
 
 public class Address {
+    // public static void main(String[] args) {
+
+    // }
 
         private String street;
         private String city;
@@ -8,7 +11,14 @@ public class Address {
         private String zipCode;
         private String country = "USA";
 
-        @Override
+        public Address(){
+            System.out.println("Address constructor");
+            street = "123 No street";
+            city = "bad";
+            state = "WS";
+            zipCode = "0002";
+            country = "USW";
+        }
         public String toString() {
             return street + ", " + city + ", " + state + ", " + zipCode + ", " + country;
         }
