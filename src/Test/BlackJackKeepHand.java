@@ -19,7 +19,7 @@ public class BlackJackKeepHand {
             System.out.println("its a tie");
         } else if (player2 < player1) {
             System.out.println("player loss");
-        } if else  (player2 <= max || player1 <= max) {
+        } if  (player2 <= max || player1 <= max) {
             System.out.println("player bust");
         }
     }
