@@ -9,18 +9,20 @@ public class BlackJackKeepHand {
         int player1 = scan.nextInt();
         // System.out.println("player2, enter your number");
         int player2 = scan.nextInt();
-        int max = 22;
-        int min = 0;
+        int num = 0;
+
 
 
         if (player2 > player1) {
             System.out.println("player win");
-        } else if (player2 == player1) {
+        } if (player2 == player1) {
             System.out.println("its a tie");
-        } else if (player2 < player1) {
+        } if (player2 < player1) {
             System.out.println("player loss");
-        } if  (player2 <= max || player1 <= max) {
+        } if  (player2 > 21 || player1 <= 21) {
             System.out.println("player bust");
+        // } else if  (player1 > 21) {
+            //System.out.println("player bust");
         }
     }
 }
